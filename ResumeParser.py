@@ -11,7 +11,7 @@ import gdown
 import os
 import spacy
 
-MODEL_URL = "https://drive.google.com/drive/folders/1ux2JO41yNNjelfR8BgKkB5PinE37oXR0?usp=sharing"
+MODEL_URL = "https://drive.google.com/drive/folders/1usHLXJTdU1eLIAKvjzLtCtauYJEC8Qqw?usp=sharing"
 MODEL_PATH = "my_spacy_model"
 
 if not os.path.exists(MODEL_PATH):
