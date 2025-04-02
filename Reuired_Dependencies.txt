@@ -1,0 +1,8 @@
+streamlit
+spacy
+pandas
+pytesseract
+pypdfium2
+pillow
+torch
+transformers
