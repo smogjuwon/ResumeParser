@@ -6,3 +6,5 @@ pypdfium2
 pillow
 torch
 transformers
+gdown
+os
