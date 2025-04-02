@@ -7,10 +7,23 @@ import re
 import streamlit as st
 from io import BytesIO
 
+import gdown
+import os
+import spacy
+
+MODEL_URL = "https://drive.google.com/drive/folders/1VWN9tEM903fu42ssG5wsrNdSmFJMTTTW?usp=sharing"
+MODEL_PATH = "my_spacy_model"
+
+if not os.path.exists(MODEL_PATH):
+    gdown.download(MODEL_URL, MODEL_PATH, quiet=False)
+
+nlp = spacy.load(MODEL_PATH)
+
+
 @st.cache_resource
 # Load your custom model
-nlp = spacy.load('my_spacy_model')
-
+#nlp = spacy.load('my_spacy_model')
+nlp = spacy.load(MODEL_PATH)
 
 # Function to process the PDF and extract text
 def process_pdf(resume, scale=300/72):
